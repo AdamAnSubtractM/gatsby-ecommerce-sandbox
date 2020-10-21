@@ -31,19 +31,14 @@ export default function Pagination({
   pageSize,
   totalCount,
   currentPage,
-  skip,
   base,
 }) {
-  console.log(`currentPage`, currentPage);
   // make some variables
   const totalPages = Math.ceil(totalCount / pageSize);
   const prevPage = currentPage - 1;
   const nextPage = currentPage + 1;
   const hasNextPage = nextPage <= totalPages;
   const hasPrevPage = prevPage >= 1;
-  console.log(`pagination totalCount`, totalCount);
-  console.log(`pageSize`, pageSize);
-  console.log(`pagination totalPages`, totalPages);
   return (
     <PaginationStyles>
       <Link disabled={!hasPrevPage} to={`${base}/${prevPage}`}>

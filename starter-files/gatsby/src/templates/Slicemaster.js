@@ -4,7 +4,6 @@ import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 
 export default function SlicemasterPage({ data: { person } }) {
-  console.log(`person`, person);
   return (
     <>
       <SEO title={person.name} image={person?.image?.asset?.src} />

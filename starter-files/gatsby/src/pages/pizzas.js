@@ -6,7 +6,6 @@ import ToppingsFilter from '../components/ToppingsFilter';
 
 export default function PizzasPage({ data, pageContext }) {
   const pizzas = data.pizzas.nodes;
-  console.log(`pizzas`, data.pizzas);
   return (
     <>
       <SEO

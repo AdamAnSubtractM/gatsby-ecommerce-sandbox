@@ -5,7 +5,6 @@ import LoadingGrid from '../components/LoadingGrid';
 import ItemGrid from '../components/ItemGrid';
 
 function CurrentlySlicing({ slicemasters }) {
-  console.log(`slicemaster`, slicemasters);
   return (
     <div>
       <h2 className="center">
@@ -21,7 +20,6 @@ function CurrentlySlicing({ slicemasters }) {
   );
 }
 function HotSlices({ hotSlices }) {
-  console.log(`hotSlices`, hotSlices);
   return (
     <div>
       <h2 className="center">

@@ -37,7 +37,7 @@ export default function usePizza({ pizzas, inputs }) {
       email: inputs.email,
       mapleSyrup: inputs.mapleSyrup,
     };
-    console.log(`body`, body);
+
     const res = await fetch(
       `${process.env.GATSBY_SERVERLESS_BASE}/placeOrder`,
       {

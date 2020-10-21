@@ -10,7 +10,6 @@ export default function PizzaOrder({ order, pizzas, removeFromOrder }) {
       <p>You have {order.length} in your order.</p>
       {order.map((singleOrderItem, i) => {
         const pizza = pizzas.find((zza) => zza.id === singleOrderItem.id);
-        console.log(`pizza`, pizza);
         return (
           <StyledMenuItem key={`${singleOrderItem.id}${i}`}>
             <Img fluid={pizza.image.asset.fluid} />
